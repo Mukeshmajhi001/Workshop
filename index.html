@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="script.js" defer></script>
     <link rel="icon" href="logo.jpg" type="image/png">
 </head>
+
 <body class="bg-blue-50 font-sans">
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
@@ -17,12 +19,12 @@
             <div class="flex items-center">
                 <a href="#" class="text-2xl font-bold text-indigo-600">Portfolio</a>
             </div>
-            
+
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                 <i class="fas fa-bars text-2xl">h</i>
             </button>
-            
+
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="text-indigo-600 font-medium">Home</a>
@@ -31,7 +33,7 @@
                 <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
             </nav>
         </div>
-        
+
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
             <a href="#" class="block py-2 text-indigo-600 font-medium">Home</a>
@@ -46,7 +48,9 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Mukesh Majhi</h1>
             <p class="text-xl md:text-2xl mb-8">Frontend Developer & UI Designer</p>
-            <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">View My Work</a>
+            <a href="#projects"
+                class="bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">View My
+                Work</a>
         </div>
     </section>
 
@@ -56,18 +60,18 @@
             <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/3 flex justify-center">
-                    <img src="logo.jpg" 
-                         alt="Profile" 
-                         class="rounded-full w-64 h-64 object-cover shadow-xl">
+                    <img src="logo.jpg" alt="Profile" class="rounded-full w-64 h-64 object-cover shadow-xl">
                 </div>
                 <div class="md:w-2/3">
                     <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
                     <p class="text-gray-700 mb-4">
-                        I'm a passionate frontend developer with 2 years of experience creating beautiful, functional websites and applications. 
+                        I'm a passionate frontend developer with 2 years of experience creating beautiful, functional
+                        websites and applications.
                         I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.
                     </p>
                     <p class="text-gray-700 mb-6">
-                        My goal is to build accessible, responsive websites that provide the best user experience across all devices.
+                        My goal is to build accessible, responsive websites that provide the best user experience across
+                        all devices.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <span class="bg-gray-100 px-4 py-2 rounded-full">HTML/CSS</span>
@@ -85,62 +89,64 @@
     <section id="projects" class="py-16 px-4 bg-gray-50">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Project 1" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Project 1" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
-                        <p class="text-gray-600 mb-4">A fully responsive online store with cart functionality and payment integration.</p>
+                        <p class="text-gray-600 mb-4">A fully responsive online store with cart functionality and
+                            payment integration.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Node.js</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
-                         alt="Project 2" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                        alt="Project 2" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
-                        <p class="text-gray-600 mb-4">A productivity application for organizing tasks with drag-and-drop functionality.</p>
+                        <p class="text-gray-600 mb-4">A productivity application for organizing tasks with drag-and-drop
+                            functionality.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Firebase</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" 
-                         alt="Project 3" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80"
+                        alt="Project 3" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Weather Dashboard</h3>
-                        <p class="text-gray-600 mb-4">Real-time weather information with 5-day forecast for any location.</p>
+                        <p class="text-gray-600 mb-4">Real-time weather information with 5-day forecast for any
+                            location.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">API</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 4 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" 
-                         alt="Project 4" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                        alt="Project 4" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Portfolio Template</h3>
                         <p class="text-gray-600 mb-4">A customizable portfolio template for creative professionals.</p>
@@ -149,15 +155,15 @@
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">CSS</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 5 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Project 5" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Project 5" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Recipe Finder</h3>
                         <p class="text-gray-600 mb-4">Search for recipes based on ingredients you have available.</p>
@@ -165,15 +171,15 @@
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">API</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 6 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" 
-                         alt="Project 6" 
-                         class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80"
+                        alt="Project 6" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Fitness Tracker</h3>
                         <p class="text-gray-600 mb-4">Track your workouts and visualize progress over time.</p>
@@ -181,7 +187,8 @@
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
                             <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Chart.js</span>
                         </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project →</a>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition">View Project
+                            →</a>
                     </div>
                 </div>
             </div>
@@ -192,14 +199,15 @@
     <section id="contact" class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-            
+
             <div class="flex flex-col md:flex-row gap-8">
                 <div class="md:w-1/2">
                     <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
                     <p class="text-gray-700 mb-6">
-                        Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+                        Feel free to reach out if you're looking for a developer, have a question, or just want to
+                        connect.
                     </p>
-                    
+
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <i class="fas fa-envelope text-indigo-600 mr-4"></i>
@@ -214,56 +222,60 @@
                             <span>BRT 8 hatkhola</span>
                         </div>
                     </div>
-                    
+
                     <div class="mt-8">
                         <h4 class="text-lg font-medium mb-4">Follow Me</h4>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/Mukeshmajhi001/" class="text-gray-700 hover:text-indigo-600 transition">
+                            <a href="https://github.com/Mukeshmajhi001/"
+                                class="text-gray-700 hover:text-indigo-600 transition">
                                 <i class="fab fa-github text-2xl"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/mukesh-majhi-b23368364" class="text-gray-700 hover:text-indigo-600 transition">
+                            <a href="https://www.linkedin.com/in/mukesh-majhi-b23368364"
+                                class="text-gray-700 hover:text-indigo-600 transition">
                                 <i class="fab fa-linkedin text-2xl"></i>
                             </a>
-                            <a href="https://x.com/mukesh__majhi_1" class="text-gray-700 hover:text-indigo-600 transition">
+                            <a href="https://x.com/mukesh__majhi_1"
+                                class="text-gray-700 hover:text-indigo-600 transition">
                                 <i class="fab fa-twitter text-2xl"></i>
                             </a>
-                            <a href="https://instagram.com/mukesh__majhi_1" class="text-gray-700 hover:text-indigo-600 transition">
+                            <a href="https://instagram.com/mukesh__majhi_1"
+                                class="text-gray-700 hover:text-indigo-600 transition">
                                 <i class="fab fa-instagram text-2xl"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="md:w-1/2">
-                    
-    <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="hidden" name="access_key" value="889736b0-067d-47b8-9f3f-2613c4b8a3b5">
+                    <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
 
-        <div class="form-group">
-            <label for="name" class="block text-gray-700 mb-2">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your full Name"
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
+                        <input type="hidden" name="access_key" value="889736b0-067d-47b8-9f3f-2613c4b8a3b5">
+
+                        <div class="form-group">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full Name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
 
 
-        <div>
-            <label for="email" class="block text-gray-700 mb-2">Neural email Address</label>
-            <input type="email" id="email" name="email" required placeholder="example@gmail.com"
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Neural email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
 
-        <div>
-            <label for="Message" class="block text-gray-700 mb-2">Report Data</label>
-            <textarea id="Message" name="description" required rows="4"
-                placeholder="Enter your detailed report analysis..."
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-        </div>
+                        <div>
+                            <label for="Message" class="block text-gray-700 mb-2">Report Data</label>
+                            <textarea id="Message" name="description" required rows="4"
+                                placeholder="Enter your detailed report analysis..."
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
 
-        <button type=" submit"
-            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition w-full">Transmit
-            Data</button>
-    </form>
+                        <button type=" submit"
+                            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition w-full">Transmit
+                            Data</button>
+                    </form>
 
 
                 </div>
@@ -279,7 +291,7 @@
                     <a href="#" class="text-2xl font-bold text-white">Portfolio</a>
                     <p class="text-gray-400 mt-2">© 2023 My Portfolio. All rights reserved.</p>
                 </div>
-                
+
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white transition">Home</a>
                     <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
@@ -290,4 +302,5 @@
         </div>
     </footer>
 </body>
+
 </html>
