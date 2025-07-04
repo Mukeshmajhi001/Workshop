@@ -1,6 +1,6 @@
 # Portfolio Website 🌟
 ![Demo Screenshot](https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/screenshot.png) <br>
-![my projct] (https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/Screenshot%202025-07-04%20194100.png)
+![my projct](https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/Screenshot%202025-07-04%20194100.png)
 A modern, responsive portfolio website built with **HTML, Tailwind CSS, and JavaScript**, showcasing projects, skills, and contact information.
 
 ## Features ✨
