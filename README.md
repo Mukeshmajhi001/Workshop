@@ -1,0 +1,61 @@
+# Portfolio Website 🌟
+
+A modern, responsive portfolio website built with **HTML, Tailwind CSS, and JavaScript**, showcasing projects, skills, and contact information.
+
+## Features ✨
+- **Responsive Design**: Works on mobile, tablet, and desktop.
+- **Interactive Elements**:
+  - Mobile-friendly navigation menu.
+  - Smooth scrolling to sections.
+- **Sections**:
+  - Hero section with call-to-action.
+  - About me with skills tags.
+  - Projects grid with tech stack labels.
+  - Contact form (using Web3Forms API).
+- **Dynamic Header**: Shadow effect on scroll.
+
+## Technologies Used 🛠️
+- **Frontend**: HTML5, Tailwind CSS, JavaScript.
+- **Icons**: Font Awesome.
+- **Form Handling**: [Web3Forms](https://web3forms.com/).
+
+## How to Use 🚀
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Mukeshmajhi001/Workshop.git
+
+   Live Demo 🔗
+View Live Portfolio (if deployed)
+
+Customization 🎨
+Replace logo.jpg with your profile image.
+
+Update projects in the Projects section.
+
+Modify the contact form's access_key (get one from Web3Forms).
+
+Script Details (script.js) 📜
+Toggles mobile menu visibility.
+
+Handles smooth scrolling for navigation links.
+
+Adds scroll effect to the header.
+
+Connect With Me 📬
+Email: Mukesh206203@gmail.com
+
+GitHub: Mukeshmajhi001
+
+LinkedIn: Mukesh Majhi
+
+⭐ Star this repo if you find it useful!
+🔧 Contributions/suggestions are welcome.
+
+text
+
+### Key Notes:
+1. **Replace Screenshot**: Add an actual screenshot of your portfolio (upload to GitHub or use a hosted image).
+2. **Form API**: Ensure the Web3Forms `access_key` is valid.
+3. **Deployment**: Add a live link if deployed (e.g., GitHub Pages).
+
+Let me know if you'd like to add/remove any sections! 😊
