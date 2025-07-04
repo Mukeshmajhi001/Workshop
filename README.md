@@ -51,11 +51,3 @@ LinkedIn: Mukesh Majhi
 ⭐ Star this repo if you find it useful!
 🔧 Contributions/suggestions are welcome.
 
-text
-
-### Key Notes:
-1. **Replace Screenshot**: Add an actual screenshot of your portfolio (upload to GitHub or use a hosted image).
-2. **Form API**: Ensure the Web3Forms `access_key` is valid.
-3. **Deployment**: Add a live link if deployed (e.g., GitHub Pages).
-
-Let me know if you'd like to add/remove any sections! 😊
