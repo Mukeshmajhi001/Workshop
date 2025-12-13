@@ -9,9 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="logo.jpg" type="image/png">
+    <link rel="stylesheet" href="loading.css">
 </head>
 
 <body class="bg-blue-50 font-sans">
+
+    <!-- Add this RIGHT AFTER opening <body> tag -->
+    <div id="loading">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+        </div>
+        <div class="loading-text">LOADING</div>
+        <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -220,18 +238,19 @@
                         </div>
 
                         <div class="flex items-center">
-    <i class="fas fa-phone text-indigo-600 mr-4"></i>
-    <a href="tel:+9779806357905" class="text-blue-600 hover:underline">
-        +977 9806 357905
-    </a>
-</div>
+                            <i class="fas fa-phone text-indigo-600 mr-4"></i>
+                            <a href="tel:+9779806357905" class="text-blue-600 hover:underline">
+                                +977 9806 357905
+                            </a>
+                        </div>
 
                         <div class="flex items-center">
-    <i class="fas fa-map-marker-alt text-indigo-600 mr-4"></i>
-    <a href="https://maps.app.goo.gl/EbRp1g1zFgVutC5e9" target="_blank" class="text-blue-600 hover:underline">
-        BRT 8 hatkhola
-    </a>
-</div>
+                            <i class="fas fa-map-marker-alt text-indigo-600 mr-4"></i>
+                            <a href="https://maps.app.goo.gl/EbRp1g1zFgVutC5e9" target="_blank"
+                                class="text-blue-600 hover:underline">
+                                BRT 8 hatkhola
+                            </a>
+                        </div>
 
                     </div>
 
@@ -254,7 +273,7 @@
                                 class="text-gray-700 hover:text-indigo-600 transition" title="instagram">
                                 <i class="fab fa-instagram text-2xl"></i>
                             </a>
-                             <a href="https://wa.me/+9779806357905"
+                            <a href="https://wa.me/+9779806357905"
                                 class="text-gray-700 hover:text-indigo-600 transition" title="whatsapp">
                                 <i class="fab fa-whatsapp text-2xl"></i>
                             </a>
@@ -327,5 +346,5 @@
         </div>
     </footer>
 </body>
-
+<script src="loading.js"></script>
 </html>

@@ -1,0 +1,136 @@
+/* Add this to your existing CSS file or <style> tag */
+
+/* Loading Animation Styles */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50; /* Dark blue background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.loader-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.loader-inner:nth-child(1) {
+    border: 8px solid transparent;
+    border-top: 8px solid #3498db; /* Blue */
+    animation: spin 1.5s linear infinite;
+}
+
+.loader-inner:nth-child(2) {
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    border-top: 8px solid #e74c3c; /* Red accent */
+    animation: spin 2s linear infinite;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.loader-inner:nth-child(3) {
+    border: 8px solid transparent;
+    border-top: 8px solid #ffffff; /* White */
+    animation: spin 2.5s linear infinite;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.loading-dots {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 20px;
+}
+
+.loading-dots span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading-dots span:nth-child(1) {
+    left: 8px;
+    animation: loading-dots1 0.6s infinite;
+}
+
+.loading-dots span:nth-child(2) {
+    left: 8px;
+    animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots span:nth-child(3) {
+    left: 32px;
+    animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots span:nth-child(4) {
+    left: 56px;
+    animation: loading-dots3 0.6s infinite;
+}
+
+@keyframes loading-dots1 {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes loading-dots2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(24px, 0); }
+}
+
+@keyframes loading-dots3 {
+    0% { transform: scale(1); }
+    100% { transform: scale(0); }
+}
+
+/* Add this to hide body content until loading is complete */
+body.loading-active {
+    overflow: hidden;
+}
+
+body.loading-complete {
+    overflow: auto;
+}
