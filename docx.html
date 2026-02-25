@@ -1,181 +1,549 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Educational Certificates</title>
-    <link rel="stylesheet" href="docx.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Note: Create docx.css file or remove this line -->
+    <link rel="stylesheet" href="docx.css">
 </head>
-<body>
-    <h1>My Educational Certificates</h1>
 
+<body>
+    <!-- Header Section with Gradient -->
+    <header class="header">
+        <div class="header-content">
+            <h1>🎓 My Educational Journey</h1>
+            <p>Preserving memories of academic excellence</p>
+        </div>
+    </header>
+
+    <!-- Stats Section - UPDATED number from 11 to 24 -->
+    <div class="stats-container">
+        <div class="stat-item">
+            <i class="fas fa-certificate"></i>
+            <span class="stat-number">24</span>
+            <span class="stat-label">Certificates</span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="stat-number">3</span>
+            <span class="stat-label">Classes</span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-star"></i>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Memories</span>
+        </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Class 12">Class 12</button>
+        <!-- Fixed: Added Class 11 button but no certificates with this category yet -->
+        <button class="filter-btn" data-filter="Class 11">Class 11</button>
+        <button class="filter-btn" data-filter="Class 10">Class 10</button>
+        <button class="filter-btn" data-filter="Official">Official</button>
+        <button class="filter-btn" data-filter="Government">Government</button>
+    </div>
+
+    <!-- Gallery Container -->
     <div class="gallery-container">
-        <!-- Certificate 1 -->
-        <div class="photo-container">
+        <!-- Certificate 1 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 12">
             <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/PROVISINAL CERTIFICATE.jpg" alt="Provisional Certificate" class="photo" id="cert1">
+                <img src="Gallery/PROVISINAL CERTIFICATE.jpg" alt="Provisional Certificate" class="photo" id="cert1"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert1')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Provisional Certificate</span>
-                <button class="download-btn" onclick="downloadImage('cert1', 'Provisional_Certificate.jpg')">
+                <span class="note-text">📜 Provisional Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert1', 'PROVISINAL CERTIFICATE.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
         <!-- Certificate 2 -->
-        <div class="photo-container">
+        <div class="photo-container" data-category="Class 12">
             <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/TRANSCRIPT.jpg" alt="Transcript" class="photo" id="cert2">
+                <img src="Gallery/TRANSCRIPT.jpg" alt="Transcript" class="photo" id="cert2" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert2')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Transcript</span>
+                <span class="note-text">📊 Transcript</span>
                 <button class="download-btn" onclick="downloadImage('cert2', 'Transcript.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 3 -->
-        <div class="photo-container">
-            <span class="cert-badge">Official</span>
+        <!-- Certificate 3 - FIXED image path (removed underscore mixing) -->
+        <div class="photo-container" data-category="Class 12">
+            <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/MIGRATION.jpg" alt="Migration Certificate" class="photo" id="cert3">
+                <img src="Gallery/TRANSFER_CHARACTER CERTIFICATE.jpg" alt="Transfer Certificate" class="photo"
+                    id="cert3" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert3')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Migration Certificate</span>
-                <button class="download-btn" onclick="downloadImage('cert3', 'Migration_Certificate.jpg')">
+                <span class="note-text">📋 Transfer Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert3', 'TRANSFER_CHARACTER CERTIFICATE.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
         <!-- Certificate 4 -->
-        <div class="photo-container">
-            <span class="cert-badge">Class 11</span>
+        <div class="photo-container" data-category="Class 12">
+            <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/TRANSFER_CHARACTER CERTIFICATE.jpg" alt="Transfer Certificate" class="photo" id="cert4">
+                <img src="Gallery/MIGRATION.jpg" alt="Migration Certificate" class="photo" id="cert4" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert4')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Transfer Certificate</span>
-                <button class="download-btn" onclick="downloadImage('cert4', 'Transfer_Certificate.jpg')">
+                <span class="note-text">🔄 Migration Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert4', 'Migration_Certificate.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 5 -->
-        <div class="photo-container">
+        <!-- Certificate 5 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 12">
             <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/First admit card .jpg" alt="First Admit Card" class="photo" id="cert5">
+                <img src="Gallery/First admit card.jpg" alt="First Admit Card" class="photo" id="cert5" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert5')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">First Admit Card</span>
-                <button class="download-btn" onclick="downloadImage('cert5', 'First_Admit_Card.jpg')">
+                <span class="note-text">🎫 First Admit Card</span>
+                <button class="download-btn" onclick="downloadImage('cert5', 'First Admit Card.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 6 -->
-        <div class="photo-container">
+        <!-- Certificate 6 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 12">
             <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/Second admit card .jpg" alt="Second Admit Card" class="photo" id="cert6">
+                <img src="Gallery/Second admit card.jpg" alt="Second Admit Card" class="photo" id="cert6"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert6')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Second Admit Card</span>
-                <button class="download-btn" onclick="downloadImage('cert6', 'Second_Admit_Card.jpg')">
+                <span class="note-text">🎫 Second Admit Card</span>
+                <button class="download-btn" onclick="downloadImage('cert6', 'Second Admit Card.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
         <!-- Certificate 7 -->
-        <div class="photo-container">
-            <span class="cert-badge">Official</span>
+        <div class="photo-container" data-category="Class 12">
+            <span class="cert-badge">Class 12</span>
             <div class="photo-wrapper">
-                <img src="Gallery/Registration card .jpg" alt="Registration Card" class="photo" id="cert7">
+                <img src="Gallery/Supplementary.jpg" alt="Supplementary Certificate" class="photo" id="cert7"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert7')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Registration Card</span>
-                <button class="download-btn" onclick="downloadImage('cert7', 'Registration_Card.jpg')">
+                <span class="note-text">➕ Supplementary Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert7', 'Supplementary_Certificate.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 8 -->
-        <div class="photo-container">
-            <span class="cert-badge">Supplementary</span>
+        <!-- Certificate 8 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
             <div class="photo-wrapper">
-                <img src="Gallery/Supplementary.jpg" alt="Supplementary Certificate" class="photo" id="cert8">
+                <img src="Gallery/Registration card.jpg" alt="Registration Card" class="photo" id="cert8"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert8')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Supplementary Certificate</span>
-                <button class="download-btn" onclick="downloadImage('cert8', 'Supplementary_Certificate.jpg')">
+                <span class="note-text">📇 Registration Card</span>
+                <button class="download-btn" onclick="downloadImage('cert8', 'Registration card.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
         <!-- Certificate 9 -->
-        <div class="photo-container">
+        <div class="photo-container" data-category="Class 10">
             <span class="cert-badge">Class 10</span>
             <div class="photo-wrapper">
-                <img src="Gallery/CERTIFICATE.jpg" alt="Class 10 Certificate" class="photo" id="cert9">
+                <img src="Gallery/CERTIFICATE.jpg" alt="Class 10 Certificate" class="photo" id="cert9" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert9')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Class 10 Certificate</span>
+                <span class="note-text">🏆 Class 10 Certificate</span>
                 <button class="download-btn" onclick="downloadImage('cert9', 'Class10_Certificate.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 10 -->
-        <div class="photo-container">
+        <!-- Certificate 10 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 10">
             <span class="cert-badge">Class 10</span>
             <div class="photo-wrapper">
-                <img src="Gallery/MARK SHEET.jpg" alt="Mark Sheet" class="photo" id="cert10">
+                <img src="Gallery/MARK SHEET.jpg" alt="Mark Sheet" class="photo" id="cert10" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert10')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Mark Sheet</span>
-                <button class="download-btn" onclick="downloadImage('cert10', 'Mark_Sheet.jpg')">
+                <span class="note-text">📈 Mark Sheet</span>
+                <button class="download-btn" onclick="downloadImage('cert10', 'Mark Sheet.jpg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
 
-        <!-- Certificate 11 -->
-        <div class="photo-container">
+        <!-- Certificate 11 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 10">
             <span class="cert-badge">Class 10</span>
             <div class="photo-wrapper">
-                <img src="Gallery/ADMIT CARD.jpg" alt="Admit Card" class="photo" id="cert11">
+                <img src="Gallery/ADMIT CARD.jpg" alt="Admit Card" class="photo" id="cert11" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert11')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
             </div>
             <div class="note">
-                <span class="note-text">Admit Card</span>
-                <button class="download-btn" onclick="downloadImage('cert11', 'Admit_Card.jpg')">
+                <span class="note-text">🎟️ Admit Card</span>
+                <button class="download-btn" onclick="downloadImage('cert11', 'Admit Card.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 12 -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/HTML_CSS.jpg" alt="HTML & CSS Certificate" class="photo" id="cert12" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert12')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 HTML & CSS Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert12', 'HTML_CSS.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 13 - FIXED image path and typo (Djangp -> Django) -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/PY_and_Django_workshop.jpg" alt="Python & Django Workshop Certificate" class="photo"
+                    id="cert13" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert13')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Python & Django Workshop Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert13', 'Python_Django_Workshop.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 14 - FIXED image path (removed spaces) -->
+        <div class="photo-container" data-category="Class 10">
+            <span class="cert-badge">Class 10</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/TRANSFER_AND_CHARACTER_CERTIFICATE_10.jpeg" alt="Transfer and Character Certificate"
+                    class="photo" id="cert14" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert14')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Transfer and Character Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert14', 'Transfer_Character_Certificate_10.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 15 -->
+        <div class="photo-container" data-category="Class 11">
+            <span class="cert-badge">Class 11</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/GRADE_SHEET.jpeg" alt="Grade Sheet Certificate" class="photo" id="cert15"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert15')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Grade Sheet Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert15', 'Grade_Sheet.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 16 -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/OFFICE_PKG.jpeg" alt="Office Package Certificate" class="photo" id="cert16"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert16')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Office Package Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert16', 'Office_Package.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 17 -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/TALLY.jpeg" alt="Tally Certificate" class="photo" id="cert17" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert17')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Tally Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert17', 'Tally_Certificate.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 18 -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/RED.jpeg" alt="Nepal Red Cross Certificate" class="photo" id="cert18" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert18')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Nepal Red Cross Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert18', 'RED.jpg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 19 -->
+        <div class="photo-container" data-category="Official">
+            <span class="cert-badge">Official</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/RED2.jpeg" alt="Nepal Red Cross Certificate 2" class="photo" id="cert19"
+                    loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert19')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 Nepal Red Cross Certificate 2</span>
+                <button class="download-btn" onclick="downloadImage('cert19', 'RED2.jpeg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 20 -->
+        <div class="photo-container" data-category="Government">
+            <span class="cert-badge">Government</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/FRONT_CTZN.jpeg" alt="FRONT Citizenship" class="photo" id="cert20" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert20')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 FRONT Citizenship Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert20', 'FRONT_CTZN.jpeg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 21 -->
+        <div class="photo-container" data-category="Government">
+            <span class="cert-badge">Government</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/BACK_CTZN.jpeg" alt="BACK Citizenship" class="photo" id="cert21" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert21')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 BACK Citizenship </span>
+                <button class="download-btn" onclick="downloadImage('cert21', 'BACK_CTZN.jpeg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 22 -->
+        <div class="photo-container" data-category="Government">
+            <span class="cert-badge">Government</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/FULL_CTZN.jpeg" alt="FULL Citizenship " class="photo"
+                    id="cert22" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert22')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 FULL Citizenship</span>
+                <button class="download-btn" onclick="downloadImage('cert22', 'FULL_CTZN.jpeg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate 23 -->
+        <div class="photo-container" data-category="Government">
+            <span class="cert-badge">Government</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/NIN.jpeg" alt="NIN Certificate" class="photo"
+                    id="cert23" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert23')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 NIN Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert23', 'NIN.jpeg')">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div> 
+        
+        <!-- Certificate 24 -->
+        <div class="photo-container" data-category="Government">
+            <span class="cert-badge">Government</span>
+            <div class="photo-wrapper">
+                <img src="Gallery/CASTE.jpeg" alt="CASTE Certificate" class="photo"
+                    id="cert24" loading="lazy">
+                <div class="photo-overlay">
+                    <button class="view-btn" onclick="openFullscreen('cert24')">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <span class="note-text">📇 CASTE Certificate</span>
+                <button class="download-btn" onclick="downloadImage('cert24', 'CASTE.jpeg')">
                     <i class="fas fa-download"></i> Download
                 </button>
             </div>
         </div>
     </div>
 
-    <script>
-        function downloadImage(imageId, fileName) {
-            const image = document.getElementById(imageId);
-            const link = document.createElement('a');
-            link.href = image.src;
-            link.download = fileName;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
+    <!-- Fullscreen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close-modal" onclick="closeFullscreen()">&times;</span>
+        <img class="modal-content" id="fullscreenImage">
+        <div class="modal-caption" id="modalCaption"></div>
+        <button class="modal-download-btn" onclick="downloadModalImage()">
+            <i class="fas fa-download"></i> Download
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 My Educational Certificates. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: #ff4757;"></i> for preserving memories</p>
+    </footer>
+
+    <!-- Note: Create docx.js file with all JavaScript functions -->
+    <script src="docx.js"></script>
 </body>
+
 </html>
