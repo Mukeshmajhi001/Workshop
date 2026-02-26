@@ -52,3 +52,10 @@ if (contactForm) {
     }
   });
 }
+
+ // Reverse order of project cards
+document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector("#projects .grid");
+    const cards = Array.from(grid.children);
+    cards.reverse().forEach(card => grid.appendChild(card));
+  });
