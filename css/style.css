@@ -1,0 +1,143 @@
+
+        /* Custom styles that complement Tailwind */
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #7c3aed;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading animation */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+
+        #loading.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader {
+            display: flex;
+            gap: 8px;
+        }
+
+        .loader-inner {
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            animation: bounce 0.6s infinite alternate;
+        }
+
+        .loader-inner:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader-inner:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            to {
+                transform: translateY(-20px);
+                opacity: 0.7;
+            }
+        }
+
+        .loading-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+            letter-spacing: 4px;
+        }
+
+        /* Project card hover effects */
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-image {
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        /* Skill tags animation */
+        .skill-tag {
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .skill-tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Social media icons hover effect */
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            color: var(--primary-color) !important;
+        }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Form input focus effects */
+        .form-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        /* Mobile menu animation */
+        #mobile-menu {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        #mobile-menu.show {
+            max-height: 300px;
+            opacity: 1;
+            padding: 1rem;
+        }
