@@ -1,5 +1,9 @@
 # Portfolio Website 🌟
-![Demo Screenshot](https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/screenshot.png) <br>
+
+[![Visit Site](https://img.shields.io/badge/Visit_Site-28a745?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mukeshkumarmajhi.com.np/)
+<br>
+![Demo Screenshot](https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/screenshot.png)
+
 ![my projct](https://github.com/Mukeshmajhi001/Workshop/blob/2147c86c48c05ac83ed02c1dfb9e716793114b6f/screenshot/Screenshot%202025-07-04%20194100.png)
 
 A modern, responsive portfolio website built with **HTML, Tailwind CSS, and JavaScript**, showcasing projects, skills, and contact information.
@@ -22,28 +26,28 @@ A modern, responsive portfolio website built with **HTML, Tailwind CSS, and Java
 - **Form Handling**: [Web3Forms](https://web3forms.com/).
 
 ## How to Use 🚀
+
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Mukeshmajhi001/Workshop.git
+   ```
 
-   Live Demo 🔗
+## Live Demo 🔗
 View Live Portfolio (if deployed)
 
-Customization 🎨
+## Customization 🎨
 Replace logo.jpg with your profile image.
 
 Update projects in the Projects section.
 
 Modify the contact form's access_key (get one from Web3Forms).
 
-Script Details (script.js) 📜
-Toggles mobile menu visibility.
+## Script Details (script.js) 📜
+- Toggles mobile menu visibility.
+- Handles smooth scrolling for navigation links.
+- Adds scroll effect to the header.
 
-Handles smooth scrolling for navigation links.
-
-Adds scroll effect to the header.
-
-Connect With Me 📬
+## Connect With Me 📬
 Email: Mukesh206203@gmail.com
 
 GitHub: Mukeshmajhi001
